@@ -1,6 +1,6 @@
 # NgGameOfLife
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This is my simple approach on making Conway's game of life
 
 ## Development server
 
