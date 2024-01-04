@@ -97,8 +97,9 @@ export class LifeService {
     return this.Life[y][x];
   }
 
-  public speedUp() {
-    this.Interval += 50;
+  public slowDown() {
+    if(this.UpdateInterval >= 1000) return;
+    this.UpdateInterval += 50;
 
     if(this.Alive) {
       this.stop(); 
@@ -106,10 +107,12 @@ export class LifeService {
     }
   }
 
-  public slowDown() {
-    if(this.Interval <= 100) return;
+  public speedUp() {
+    console.log(this.UpdateInterval)
 
-    this.Interval -= 50;
+    if(this.UpdateInterval <= 100) return;
+
+    this.UpdateInterval -= 50;
 
     if(this.Alive) {
       this.stop(); 
