@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="game-container">
+    <app-life  [Life]="Life.Life"></app-life>
+  </div>
+
+  <div class="controls">
+    <div class="button" (click)="toggle()">{{this.Life.Alive ? 'Stop' : 'Start'}}</div>
+    <div class="button" (click)="this.Life.reset()">Reset</div>
+    <div class="button" (click)="this.Life.speedUp()">Speed up</div>
+    <div class="button" (click)="this.Life.slowDown()">Slow down</div>
+  </div>
+</div>

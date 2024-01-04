@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: #ddd;
+
+  margin: 0;
+}
+
+.button, button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  padding: 8px 24px;
+
+  background-color: black;
+  color: #ddd;
+
+  border: 1px solid #ddd;
+
+  cursor: pointer;
+}

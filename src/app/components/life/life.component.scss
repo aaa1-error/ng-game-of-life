@@ -1,0 +1,33 @@
+.grid {
+  //border: 1px solid white
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    .cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 16px;
+      min-height: 16px;
+      width: 16px;
+      min-width: 16px;
+      border: 1px solid #ffffff11;
+
+      cursor: pointer;
+
+      user-select: none;
+      background-color: black;
+
+      transition: all 0.5s ease;
+
+      &.alive {
+        background-color: white;
+        //filter: drop-shadow(0px 0px 5px white);
+        box-shadow: inset 0px 0px 3px 0px green;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.container {
+  user-select: none;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  //align-items: center;
+  justify-content: space-between;
+
+  //overflow: scroll;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 8px;
+
+    width: 200px;
+    background-color: black;
+
+    @media screen and (max-width: 768px) { 
+      width: 100%;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .button {
+        flex: 1;
+      }
+    }
+  }
+
+  .game-container {    
+    flex: 1;
+    overflow: scroll;
+  }
+}

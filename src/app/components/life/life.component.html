@@ -1,0 +1,6 @@
+<div class="grid">
+  <div class="row" *ngFor="let row of Life; index as y" >
+    <div class="cell" *ngFor="let item of row; index as x" [ngClass]="{ 'alive' : item }" (mousedown)="handleCellClick(y, x)">
+    </div>
+  </div>
+</div>
